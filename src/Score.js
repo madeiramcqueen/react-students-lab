@@ -1,8 +1,8 @@
-export default function Score({ date, score }) {
+export default function Score({ score }) {
     return (
         <>
-            <p>Date: {date} </p>
-            <p>Score: {score} </p>
+            <p>Date: {score.date} </p>
+            <p>Score: {score.score} </p>
         </>
     )
 }

@@ -73,15 +73,8 @@ function App() {
         {studentsInfo.map(student => (
           <Student
             key={student.bio}
-            name={student.name}
-            bio={student.bio}
-            scores={student.scores}
+            student={student}
           />
-          // <Score 
-          //   date={student.date}
-          //   score={student.score}
-          //   />  
-
         ))}
 
       </div>

@@ -1,16 +1,15 @@
 import Score from "./Score"
 
-export default function Student({ name, bio, scores }) {
+export default function Student({ student }) {
     return (
         <>
-            <p> Name: {name} </p>
-            <p> Bio: {bio} </p>
+            <p> Name: {student.name} </p>
+            <p> Bio: {student.bio} </p>
             <p> Scores:
                 <>
-                    {scores.map(score => (
+                    {student.scores.map(score => (
                         <Score
-                            date={score.date}
-                            score={score.score}
+                            score={score}
                         />
                     ))}
                 </>
